@@ -1,6 +1,6 @@
 # Loan Qualifier Application
 
->"To asses the eligibility of users for a given csv of loans"
+>"To asses the eligibility of users for a given csv file of loans"
 
 ---
 ### Directory
