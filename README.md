@@ -4,11 +4,11 @@
 
 ---
 ### Directory
-[Starter_Code/qualifier/app.py](Code)
+[Code](Starter_Code/qualifier/app.py)
 
-[Start_Code/qualifier/data](Data)
+[Data](Start_Code/qualifier/data)
 
-[Starter_Code/qualifier/tests/test_qualifier.py](Tests)
+[Tests](Starter_Code/qualifier/tests/test_qualifier.py)
 
 ---
 **Welcome to my repository for one of my first major FinTech projects.
