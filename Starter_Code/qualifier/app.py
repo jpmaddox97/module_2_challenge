@@ -7,13 +7,15 @@ Example:
     $ python app.py
 """
 import sys
-import csv
 import fire
 import questionary
 import pandas as pd
 from pathlib import Path
 
-from qualifier.utils.fileio import load_csv
+from qualifier.utils.fileio import (
+    load_csv,
+    save_qualifying_loans,
+)
 
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
@@ -110,40 +112,12 @@ def see_qualifying_loans(qualifying_loans):
         qualifying_loans (list of lists): the qualifying bank loans after filtered through
     
     """
-    check = questionary.select(
-        "Would you like to see your list of qualified loans?",
-        choices=['Yes','No']
+    check = questionary.confirm(
+        "Would you like to see your list of qualified loans?"
     ).ask()
-    if check == 'Yes':
+    if check:
         for loan in qualifying_loans:
             print(loan)
-
-    # loans = [loan for loan in qualifying_loans if check == 'Yes']
-    # print(loans)
-    #if check == 'Yes':
-    #    for loan in qualifying_loans:
-    #        print(loan)
-
-def save_qualifying_loans(qualifying_loans):
-    """Saves the qualifying loans to a CSV file.
-
-    Args:
-        qualifying_loans (list of lists): The qualifying bank loans.
-    """
-    # @TODO: Complete the usability dialog for savings the CSV Files.
-    save = questionary.select(
-        "Would you like to save your list of qualified loans?",
-        choices=['Yes','No']
-    ).ask()
-    # Indicate headers
-    header = ['Lender', 'Max Loan Amount', 'Max LTV', 'Max DTI', 'Min Credit Score', 'Interest Rate']
-
-    if save == 'Yes':
-        name = questionary.text("Name your save file (.csv):").ask()
-        with open(f'data/{name}', 'w') as f:
-            writer = csv.writer(f)
-            writer.writerows(qualifying_loans)
-            print("Saving file...")
 
 def run():
     """The main function for running the script."""
