@@ -3,7 +3,7 @@
 >"To asses the eligibility of users for a given csv file of loans"
 
 ---
-### Directory
+## Directory
 [Code](Starter_Code/qualifier/app.py)
 
 [Data](Starter_Code/qualifier/data)
@@ -16,9 +16,7 @@ This is a loan qualifier application that will match users with eligible loans.
 Users will enter their financial information and they will receive a list of qualifying loans**
 
 ---
-**
-Dependancies: Fire and Questionary
-To succesfully run this code you will need to execute the following commands in your terminal:
-pip install fire
-pip install questionary
-**
+### Dependancies: Fire and Questionary
+**To succesfully run this code you will need to execute the following commands in your terminal:**
+**pip install fire**
+**pip install questionary**
