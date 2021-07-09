@@ -18,5 +18,7 @@ Users will enter their financial information and they will receive a list of qua
 ---
 ### Dependancies: Fire and Questionary
 **To succesfully run this code you will need to execute the following commands in your terminal:**
+
 **pip install fire**
+
 **pip install questionary**
