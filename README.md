@@ -6,7 +6,7 @@
 ### Directory
 [Code](Starter_Code/qualifier/app.py)
 
-[Data](Start_Code/qualifier/data)
+[Data](Start_Code/qualifier/data/daily_rate_sheet.csv)
 
 [Tests](Starter_Code/qualifier/tests/test_qualifier.py)
 
