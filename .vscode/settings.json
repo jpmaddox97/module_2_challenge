@@ -1,0 +1,11 @@
+{
+    "python.testing.pytestArgs": [
+        "Starter_Code"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.analysis.extraPaths": [
+        "./Starter_Code/qualifier"
+    ]
+}

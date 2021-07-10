@@ -44,7 +44,7 @@ def save_qualifying_loans(qualifying_loans):
 
     if save:
         name = questionary.text("Name your save file:").ask()
-        with open(f'data/{name}.csv', 'w') as f:
+        with open(f'tests/data/output/{name}.csv', 'w') as f:
             writer = csv.writer(f)
             writer.writerow(header)
             writer.writerows(qualifying_loans)
