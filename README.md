@@ -22,3 +22,6 @@ Users will enter their financial information and they will receive a list of qua
 **pip install fire**
 
 **pip install questionary**
+
+**Below is a screen shot of application running**
+![Application Running](images/Capture.JPG)
