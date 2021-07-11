@@ -7,9 +7,9 @@
 ## Directory
 [Main Code](Starter_Code/qualifier/app.py)
 
-[Utility](Starter_Code/qualifier/utils)
+[Utility](Starter_Code/qualifier/qualifier/utils)
 
-[Filters](Starter_Code/qualifier/filters)
+[Filters](Starter_Code/qualifier/qualifier/filters)
 
 [Data](Starter_Code/qualifier/data)
 
